@@ -1,0 +1,16 @@
+BEC Bank
+
+Kunder/Bankansatte
+-id
+-usernameId
+-Navn
+-Kontonummer
+-indeestående 
+-renter
+-transaktioner
+
+Login
+-id
+-usernameId
+-username
+-password

@@ -1,0 +1,16 @@
+brug validering når bruger oprettet data da alt data kan være ondt
+ så der kun bliver overført det som ikke kan misbruges
+
+ligesom nå du opretter en e-mail adress så lav filtes så at de kun 
+kan de tegn som skal være i en email-adress
+
+telefon skal filteres så kun de cifre som er tilladt skal kunne skrives ind
+
+sørg for at opdater din db nå det er muligt så du får lukket de sikkerhedshuller som andre
+har fundet så install patch og opdattering.
+
+kryptering de ting som andre ikke skal kunne se så de ikke kan få kode ud.
+
+Man bruge sql-parametre som bliver tilføjet til database værdierne som en SQL-forspørgsels ved at
+skrive  @ efter og add noget til den. Som også kan være en SQL engine som checker hvert parameter 
+og sikker sig om kolumn bliver behandlet korrekt

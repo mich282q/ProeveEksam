@@ -1,0 +1,9 @@
+jeg kan lave password så det bliver hashing så bliver det krypetet med modul bcrypt
+
+så hvis du vælger din kode Password123 vil den kommer til og se ud som noget som det her
+"password": "$2a$10$9aNx4GxYUPvJsmgZwWhXruLkIQ60ER.a2JoUZRP1qzl28i10LMDgC"
+hvor det er forskellige tegn.
+nå du hashing det kan man ikke dekrypt det, så de kan ikke se din kode.
+
+
+den er typisk mellem 32 og 256 bits

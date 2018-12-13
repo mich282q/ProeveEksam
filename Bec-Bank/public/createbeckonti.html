@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+        <nav>
+                <div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="active" href="./">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="beckkonti/json">Json</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="createbeckonti.html">Oprettet Konti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Konti.html">Dummy data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="beckonti">konti fra db</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <form>
+                    <input type="button" value="Go back!" onclick="history.back()">
+                  </form>
+                  <h1>Oprettet konti</h1>
+    <form action="beckonti/json" method="post">
+        <label>usernameId</label> <input type="text" placeholder="userId" name="usernameId"><br />
+        <label>name</label> <input type="text" placeholder="name" name="name"><br />
+        <label>kontoNummer</label> <input type="text" placeholder="3045-" name="kontoNummer"><br />
+        <label>indeestående</label> <input type="number" placeholder="0" name="indeestående"><br />
+        <label>valutar</label> <input type="text" placeholder="kr" name="valutar"><br />
+        <label>renter</label> <input type="number" placeholder="2%" name="renter"><br />
+        <label>transaktion</label> <input type="text" placeholder="" name="transaktioner"><br />
+        <button type="submit">Create konti</button>
+    </form>
+</body>
+</html>
