@@ -11,16 +11,7 @@
   <body>
     
     {{{body}}}
-     <div id="klokke"></div>
-  <script>
-    var x = new Date();
-    document.getElementById("klokke").innerHTML = x;
-    var c = Number(document.cookie);
-    
-    if (!c) {document.cookie = 1;} {
-      c = c + 1;
-      document.cookie = c;
-    }
-  </script>
+
+      <script src="/javascripts/CookieScript.js"></script>
   </body>
 </html>

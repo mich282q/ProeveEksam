@@ -1,9 +1,6 @@
-<form>
-    <input type="button" value="Go back!" onclick="history.back()">
-</form>
-
 <h1>{{title}}</h1>
-<p>BEC Bank {{title}}</p>
+<p>Welcome {{title}}</p>
+
 
   <nav>
         <div>
@@ -33,36 +30,3 @@
         </div>
     </nav>
         <form>
-<h2 id="overskrift">Følgende konti er i databasen:</h2>
-
-<table class="table">
-<tr>
-            <th>UID</th>
-            <th>UsernameId</th>
-            <th>Name</th>
-            <th>kontoNummer</th>
-            <th>Indeestående</th>
-            <th>Valutar</th>
-            <th>Renter</th>
-            <th>transaktioner</th>
-        </tr>
-        {{#each beckonti}}
-        <td>{{_id}}</td>
-        <td>{{usernameId}}</td>
-        <td>{{name}}</td>
-        <td>{{kontoNummer}}</td>
-        <td>{{indeestaaende}}</td>
-        <td>{{valutar}}</td>
-        <td>{{renter}}</td>
-        <td>{{transaktioner}}</td>
-        <td>
-            <form action="/beckonti/delete/{{_id}}" method="POST">
-                <button>Fjern</button>
-            </form>
-        </td>
-
-    </tr>
-    </div>
-    {{/each}}
-
-</table>

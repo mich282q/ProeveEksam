@@ -1,0 +1,103 @@
+<h1>RedigerKonti</h1>
+
+ <nav>
+        <div>
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                    <a href="afterlogin">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="beckonti/json">Json</a>
+                </li>
+                <li class="nav-item">
+                    <a href="createbeckonti.html">Oprettet Konti</a>
+                </li>
+                <li class="nav-item">
+                    <a href="redigerkonti">Redigerkonti</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Konti.html">Dummy data</a>
+                </li>
+                <li class="nav-item">
+                    <a href="beckonti">Konti fra db</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="active" href="./">LogOut</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<table>
+    <form action="/redigerkonti/put" method="POST">
+
+        <td>
+            <label><b>Hvilken konti skal justeres?</b></label>
+        </td>
+        <tr>
+            <td>
+                <label>ID:</label>
+            </td>
+            <td>
+                <input type="number" name="usernameId">
+            </td>
+            <td> <button type="submit" class="btn btn-dark">Find</button></td>
+        </tr>
+        <tr>
+            <td>
+
+                <label><b>Justeringer:</b></label>
+            </td>
+        </tr>
+            <td>
+                <label>Name:</label>
+            </td>
+            <td>
+                <input type="text" name="name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Kontonummer:</label>
+            </td>
+            <td>
+                <input type="text" name="kontoNummer">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Indeestaaende</label>
+            </td>
+            <td>
+                <input type="number" name="indeestaaende">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Valutar</label>
+            </td>
+            <td>
+                <input type="text" name="valutar">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Renter</label>
+            </td>
+            <td>
+                <input type="number" name="renter">
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <label>Transaktioner</label>
+            </td>
+            <td>
+                <input type="text" name="transaktioner">
+            </td>
+        </tr>
+    
+
+</table>
+
+</form>

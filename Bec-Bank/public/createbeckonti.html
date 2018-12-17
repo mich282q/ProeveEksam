@@ -9,28 +9,34 @@
     <script src="main.js"></script>
 </head>
 <body>
-        <nav>
-                <div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="active" href="./">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="beckkonti/json">Json</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="createbeckonti.html">Oprettet Konti</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="Konti.html">Dummy data</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="beckonti">konti fra db</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <form>
+    <nav>
+        <div>
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                    <a href="afterlogin">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="beckonti/json">Json</a>
+                </li>
+                <li class="nav-item">
+                    <a href="createbeckonti.html">Oprettet Konti</a>
+                </li>
+                <li class="nav-item">
+                    <a href="redigerkonti">Redigerkonti</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Konti.html">Dummy data</a>
+                </li>
+                <li class="nav-item">
+                    <a href="beckonti">Konti fra db</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="active" href="./">LogOut</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<form>
                     <input type="button" value="Go back!" onclick="history.back()">
                   </form>
                   <h1>Oprettet konti</h1>
@@ -38,7 +44,7 @@
         <label>usernameId</label> <input type="text" placeholder="userId" name="usernameId"><br />
         <label>name</label> <input type="text" placeholder="name" name="name"><br />
         <label>kontoNummer</label> <input type="text" placeholder="3045-" name="kontoNummer"><br />
-        <label>indeestående</label> <input type="number" placeholder="0" name="indeestående"><br />
+        <label>indeestående</label> <input type="number" placeholder="0" name="indeestaaende"><br />
         <label>valutar</label> <input type="text" placeholder="kr" name="valutar"><br />
         <label>renter</label> <input type="number" placeholder="2%" name="renter"><br />
         <label>transaktion</label> <input type="text" placeholder="" name="transaktioner"><br />

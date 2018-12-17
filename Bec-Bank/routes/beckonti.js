@@ -45,7 +45,7 @@ router.post('/json', function (req, res, next) {
       beckonti.usernameId = req.body.usernameId;
       beckonti.name = req.body.name;
       beckonti.kontoNummer = req.body.kontoNummer;
-      beckonti.indeestående = req.body.indeestående;
+      beckonti.indeestaaende = req.body.indeestaaende;
       beckonti.valutar = req.body.valutar;
       beckonti.renter = req.body.renter;
       beckonti.transaktioner = req.body.transaktioner;
@@ -64,7 +64,7 @@ router.post('/json', function (req, res, next) {
       if (err) throw err;
       var dbo = db.db("BEC-Bank");
     var id = req.params.id;
-    dbo.collection("beckonti").deleteOne({ _id: new mongo.ObjectId(id) }, function (err, results) {
+    dbo.collection("Konti").deleteOne({ _id: new mongo.ObjectId(id) }, function (err, results) {
       if (err) throw err;
       console.log("1 document inserted");
       db.close();
