@@ -28,76 +28,19 @@
         </div>
     </nav>
 
-<table>
-    <form action="/redigerkonti/put" method="POST">
+     <form action="/redigerkonti/put" method="post">
+     <label><b>Hvilken konti skal justeres?</b></label>
+     <br>
+        <label>UsernameId</label> <input type="text" placeholder="userId" name="usernameId">
+        <td> <button type="submit" class="btn btn-dark">Find</button></td><br />
 
-        <td>
-            <label><b>Hvilken konti skal justeres?</b></label>
-        </td>
-        <tr>
-            <td>
-                <label>ID:</label>
-            </td>
-            <td>
-                <input type="number" name="usernameId">
-            </td>
-            <td> <button type="submit" class="btn btn-dark">Find</button></td>
-        </tr>
-        <tr>
-            <td>
+        <label><b>Justeringer:</b></label><br>
 
-                <label><b>Justeringer:</b></label>
-            </td>
-        </tr>
-            <td>
-                <label>Name:</label>
-            </td>
-            <td>
-                <input type="text" name="name">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label>Kontonummer:</label>
-            </td>
-            <td>
-                <input type="text" name="kontoNummer">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label>Indeestaaende</label>
-            </td>
-            <td>
-                <input type="number" name="indeestaaende">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label>Valutar</label>
-            </td>
-            <td>
-                <input type="text" name="valutar">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label>Renter</label>
-            </td>
-            <td>
-                <input type="number" name="renter">
-            </td>
-        </tr>
-         <tr>
-            <td>
-                <label>Transaktioner</label>
-            </td>
-            <td>
-                <input type="text" name="transaktioner">
-            </td>
-        </tr>
-    
-
-</table>
-
-</form>
+        <label>Name</label> <input type="text" name="name"><br />
+        <label>KontoNummer</label> <input type="text" name="kontoNummer"><br />
+        <label>Indeestående</label> <input type="number" name="indeestaaende"><br />
+        <label>Valutar</label> <input type="text" name="valutar"><br />
+        <label>Renter</label> <input type="number" name="renter"><br />
+        <label>Transaktion</label> <input type="text" name="transaktioner"><br />
+        
+    </form>
