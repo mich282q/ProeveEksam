@@ -42,12 +42,12 @@ router.post('/json', function (req, res, next) {
       if (err) throw err;
       var dbo = db.db("BEC-Bank");
       var beckonti = {};
-      beckonti.usernameId = req.body.usernameId;
+      beckonti.usernameId = req.body.usernameId; // burder være parseInt eller parseDouble (req.body.usernameId) for det bliver lavet til en String nu
       beckonti.name = req.body.name;
       beckonti.kontoNummer = req.body.kontoNummer;
-      beckonti.indeestaaende = req.body.indeestaaende;
+      beckonti.indeestaaende = req.body.indeestaaende;// burder være parseInt eller parseDouble (req.body.usernameId) for det bliver lavet til en String nu
       beckonti.valutar = req.body.valutar;
-      beckonti.renter = req.body.renter;
+      beckonti.renter = req.body.renter; // burder være parseInt eller parseDouble (req.body.usernameId) for det bliver lavet til en String nu
       beckonti.transaktioner = req.body.transaktioner;
   
       console.log("konti er oprettet ") ;
