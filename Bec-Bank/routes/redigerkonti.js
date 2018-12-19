@@ -14,9 +14,9 @@ router.get('/', function(req, res, next) {
     MongoClient.connect(url, function (err, db) {
       if (err) throw err;
       var dbo = db.db("BEC-Bank");
-      var usernameId = req.body.usernameId;
+      var usernameId = Number(req.body.usernameId);
       var oldValues = {usernameId:usernameId}
-      var newValues={$set: {usernameId: req.body.usernameId, name: req.body.name, kontoNummer: req.body.kontoNummer, indeestaaende: req.body.indeestaaende, valutar: req.body.valutar, renter: req.body.renter, transaktioner: req.body.transaktioner}}
+      var newValues={$set: {usernameId: Number(req.body.usernameId), name: req.body.name, kontoNummer: req.body.kontoNummer, indeestaaende: Number(req.body.indeestaaende), valutar: req.body.valutar, renter: Number(req.body.renter), transaktioner: req.body.transaktioner}}
     
         dbo.collection("Konti").updateOne(oldValues, newValues, function (err, res) {
         if (err) throw err;

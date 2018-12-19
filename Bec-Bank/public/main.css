@@ -51,9 +51,15 @@ h1{
     }
 
     body{
-      background-color: beige;
+      background-color: green;
     }
 
     .nav-item{
 color:blue;
     }
+
+    .create{
+      background: white;
+     
+    }
+    
