@@ -36,12 +36,11 @@
             </ul>
         </div>
     </nav>
-    <div class="create">
 <form>
                     <input type="button" value="Go back!" onclick="history.back()">
                   </form>
                   <h1>Oprettet konti</h1>
-    <form action="beckonti/json" method="post">
+    <form action="beckonti/json" method="post" class="create">
         <label>usernameId</label> <input type="number" placeholder="userId" name="usernameId"><br />
         <label>name</label> <input type="text" placeholder="name" name="name"><br />
         <label>kontoNummer</label> <input type="text" placeholder="3045-" name="kontoNummer"><br />
@@ -51,6 +50,5 @@
         <label>transaktion</label> <input type="text" placeholder="" name="transaktioner"><br />
         <button type="submit">Create konti</button>
     </form>
-</div>
 </body>
 </html>
